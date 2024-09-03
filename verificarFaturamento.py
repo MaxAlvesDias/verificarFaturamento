@@ -1,6 +1,6 @@
 import json
 
-with open('faturamento.json', 'r') as file:
+with open('dados.json', 'r') as file:
     dados = json.load(file)
 
 faturamentos = [dia['valor'] for dia in dados if dia['valor'] > 0]
